@@ -10,22 +10,43 @@
     <title>three.js demo</title>
   </head>
   <body>
-    <section class="sidebar">
-      <nav class="nav-sidebar">
-        <a href="/introduction/">Introduction</a>
-        <a href="/geometry/">Geometry</a>
-        <a href="/materials/">Material</a>
-        <a href="/mesh/">Mesh</a>
-        <a href="/lighting/">Lighting</a>
-        <a href="/camera/">Camera</a>
-        <a href="/animation/">Animation</a>
-      </nav>
-
-      <section class="controls"></section>
+    <section class="geometries">
+      <h1>Geometries</h1>
+      <canvas id="geometries"></canvas>
+      <div class="controls">
+        <label for="rotation">Rotation</label>
+        <input type="range" name="rotation" min="0" max="2" step="0.01" />
+      </div>
     </section>
 
-    <canvas id="demo"></canvas>
+    <section class="materials">
+      <h1>Materials</h1>
+      <canvas id="materials"></canvas>
+      <div class="controls"></div>
+    </section>
 
-    <script type="module" src="/main.js"></script>
+    <section class="meshes">
+      <h1>Meshes</h1>
+      <canvas id="meshes"></canvas>
+      <div class="controls"></div>
+    </section>
+
+    <section class="lighting">
+      <h1>Lighting</h1>
+      <canvas id="lighting"></canvas>
+      <div class="controls"></div>
+    </section>
+
+    <section class="cameras">
+      <h1>Cameras</h1>
+      <canvas id="cameras"></canvas>
+      <div class="controls"></div>
+    </section>
+
+    <script type="module" src="/scenes/geometries.js"></script>
+    <script type="module" src="/scenes/materials.js"></script>
+    <script type="module" src="/scenes/meshes.js"></script>
+    <script type="module" src="/scenes/lighting.js"></script>
+    <script type="module" src="/scenes/cameras.js"></script>
   </body>
 </html>
