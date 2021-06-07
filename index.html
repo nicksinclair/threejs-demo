@@ -2,12 +2,30 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>three.js demo</title>
   </head>
   <body>
-    <div id="app"></div>
+    <section class="sidebar">
+      <nav class="nav-sidebar">
+        <a href="/introduction/">Introduction</a>
+        <a href="/geometry/">Geometry</a>
+        <a href="/materials/">Material</a>
+        <a href="/mesh/">Mesh</a>
+        <a href="/lighting/">Lighting</a>
+        <a href="/camera/">Camera</a>
+        <a href="/animation/">Animation</a>
+      </nav>
+
+      <section class="controls"></section>
+    </section>
+
+    <canvas id="demo"></canvas>
+
     <script type="module" src="/main.js"></script>
   </body>
 </html>
