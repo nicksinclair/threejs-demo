@@ -2,7 +2,7 @@ import * as THREE from "three";
 
 import { rotateUniform } from "../utils.js";
 
-const canvas = document.querySelector("#meshes");
+const canvas = document.querySelector("#textures");
 const position = canvas.getBoundingClientRect();
 
 const width = position.width;

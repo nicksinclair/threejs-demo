@@ -10,42 +10,109 @@
     <title>three.js demo</title>
   </head>
   <body>
+    <h1>Three.js Demo</h1>
+
     <section class="geometries">
       <h1>Geometries</h1>
+
       <canvas id="geometries"></canvas>
+
       <div class="controls">
-        <label for="rotation">Rotation</label>
-        <input type="range" name="rotation" min="0" max="2" step="0.01" />
+        <label for="geometry">Geometry</label>
+        <select id="geometry" name="geometry">
+          <option value="box">Box</option>
+          <option value="sphere">Sphere</option>
+          <option value="cone">Cone</option>
+          <option value="cylinder">Cylinder</option>
+          <option value="icosahedron">Icosahedron</option>
+          <option value="dodecahedron">Dodecahedron</option>
+          <option value="torus">Torus</option>
+          <option value="torusknot">Torus Knot</option>
+        </select>
+
+        <label for="size">Size</label>
+        <input type="range" id="size" name="size" min="0" max="50" step="1" />
       </div>
     </section>
 
     <section class="materials">
       <h1>Materials</h1>
+
       <canvas id="materials"></canvas>
-      <div class="controls"></div>
+
+      <div class="controls">
+        <label for="material">Material</label>
+        <select id="material" name="material">
+          <option value="basic">Basic</option>
+          <option value="standard">Standard</option>
+          <option value="depth">Depth</option>
+          <option value="lambert">Lambert</option>
+          <option value="phong">Phong</option>
+          <option value="toon">Toon</option>
+          <option value="normal">Normal</option>
+        </select>
+
+        <label for="size">Size</label>
+        <input type="range" id="size" name="size" min="0" max="50" step="1" />
+      </div>
     </section>
 
-    <section class="meshes">
-      <h1>Meshes</h1>
-      <canvas id="meshes"></canvas>
-      <div class="controls"></div>
+    <section class="textures">
+      <h1>Textures</h1>
+
+      <canvas id="textures"></canvas>
+
+      <div class="controls">
+        <label for="texture">Texture</label>
+        <select id="texture" name="texture">
+          <option value="logoblack">Ionic Logo (Black)</option>
+          <option value="logotransparent">Ionic Logo (Transparent)</option>
+        </select>
+
+        <label for="size">Size</label>
+        <input type="range" id="size" name="size" min="0" max="50" step="1" />
+      </div>
     </section>
 
     <section class="lighting">
       <h1>Lighting</h1>
+
       <canvas id="lighting"></canvas>
-      <div class="controls"></div>
+
+      <div class="controls">
+        <label for="light">Light</label>
+        <select id="light" name="light">
+          <option value="ambient">Ambient</option>
+          <option value="directional">Directional</option>
+          <option value="point">Point</option>
+          <option value="spot">Spot</option>
+        </select>
+
+        <label for="size">Size</label>
+        <input type="range" id="size" name="size" min="0" max="50" step="1" />
+      </div>
     </section>
 
     <section class="cameras">
       <h1>Cameras</h1>
+
       <canvas id="cameras"></canvas>
-      <div class="controls"></div>
+
+      <div class="controls">
+        <label for="camera">Camera</label>
+        <select id="camera" name="camera">
+          <option value="perspective">Perspective</option>
+          <option value="orthographic">Orthographic</option>
+        </select>
+
+        <label for="size">Size</label>
+        <input type="range" id="size" name="size" min="0" max="50" step="1" />
+      </div>
     </section>
 
     <script type="module" src="/scenes/geometries.js"></script>
     <script type="module" src="/scenes/materials.js"></script>
-    <script type="module" src="/scenes/meshes.js"></script>
+    <script type="module" src="/scenes/textures.js"></script>
     <script type="module" src="/scenes/lighting.js"></script>
     <script type="module" src="/scenes/cameras.js"></script>
   </body>
